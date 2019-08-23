@@ -12,4 +12,4 @@ DeclareOperation( "SymbolicJoinOfIdeals",
         [ IsHomalgModule, IsHomalgModule ]);
 
 DeclareOperation( "SymbolicPower",
-        [ IsHomalgMatrix, IsInt ]);
+        [ IsHomalgModule, IsInt ]);
