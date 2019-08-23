@@ -37,7 +37,6 @@ InstallMethod( SymbolicJoinOfIdeals,
       Append( l, EntriesOfHomalgMatrix( MatrixOfGenerators( J ) ) );
       bigIdeal := LeftSubmodule( l, HomalgRing( I ) );
       
-          
 end );
 
 ##
