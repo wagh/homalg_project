@@ -65,14 +65,16 @@ InstallMethod( SymbolicPower,
         TryNextMethod();
     fi;
     
-    indets := Indeterminates( R );
+    m := AMaximalIdealContaining( LeftSubmodule( Zero( R ) ) );
     
-    indets;
-    
-    if IsPrimeModule( I ) then
-        return JoinOfIdeals( I, maxideal(n)));
+    if IsPrime( I ) then
+        return SymbolicJoinOfIdeals( I, m^n );
     fi;
-
-
-end);
     
+    pr := PrimaryDecomposition( I );
+    ass := List( pr, i -> i[2] );
+    joins := List( ass, i -> SymbolicJoinOfIdeals( i, m^n ) );
+    
+    return Iterated( joins, Intersect2 );
+    
+end );
