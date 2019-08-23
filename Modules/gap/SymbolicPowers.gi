@@ -44,20 +44,16 @@ end );
 InstallMethod( SymbolicPower,
         "for an ideal and an integer",
         [ IsHomalgModule, IsInt ],
-
-        function( I, n )
-    local R, indets, i, kxy;
-
+        
+  function( I, n )
+    local R, m, pr, ass, joins;
+      
     if not IsPosInt( n ) then
         TryNextMethod();
     fi;
-
-    if n = 1 then
-        return I;
-    fi;
     
-    if IsZero( I ) then
-        return false;
+    if n = 1 or IsZero( I ) then
+        return I;
     fi;
     
     if IsOne( I ) then
