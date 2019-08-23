@@ -1,6 +1,6 @@
 #############################################################################
 ##
-##  SymmetricAlgebra.gi                                      Modules package
+##  SymmetricPowers.gi                                      Modules package
 ##
 ##  Copyright 2013, Mohamed Barakat, University of Kaiserslautern
 ##
