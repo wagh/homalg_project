@@ -55,6 +55,9 @@ ReadPackage( "Modules", "gap/OtherFunctors.gd" );
 ## symmetric algebra
 ReadPackage( "Modules", "gap/SymmetricAlgebra.gd" );
 
+## Symbolic Powers of ideals
+ReadPackage( "Modules", "gap/SymbolicPowers.gd" );
+
 ## exterior algebra
 ReadPackage( "Modules", "gap/ExteriorAlgebra.gd" );
 

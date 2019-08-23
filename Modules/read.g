@@ -55,6 +55,9 @@ ReadPackage( "Modules", "gap/OtherFunctors.gi" );
 ## symmetric algebra
 ReadPackage( "Modules", "gap/SymmetricAlgebra.gi" );
 
+## symmetric algebra
+ReadPackage( "Modules", "gap/SymbolicPowers.gi" );
+
 ## exterior algebra
 ReadPackage( "Modules", "gap/ExteriorAlgebra.gi" );
 
